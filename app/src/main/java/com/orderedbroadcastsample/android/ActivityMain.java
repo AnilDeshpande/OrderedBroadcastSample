@@ -54,7 +54,6 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
         Intent intent=new Intent();
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         intent.setAction("com.br1");
-        intent.putExtra(BREAD_CRUMB, TAG + "->");
         sendOrderedBroadcast(intent, null, new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
