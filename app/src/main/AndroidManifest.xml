@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
 
+
+
         <receiver android:name=".BroadcastReceiver2">
             <intent-filter android:priority="2">
                 <action android:name="com.br1"/>
@@ -30,6 +32,9 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
+
+
+
 
 
 

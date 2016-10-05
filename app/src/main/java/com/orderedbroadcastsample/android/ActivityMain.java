@@ -54,6 +54,7 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
         Intent intent=new Intent();
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         intent.setAction("com.br1");
+
         sendOrderedBroadcast(intent, null, new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -63,5 +64,7 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
                 Log.i(TAG,"On Receive: "+breadcrumb);
             }
         }, null, ActivityMain.RESULT_OK,null,null);
+
+
     }
 }

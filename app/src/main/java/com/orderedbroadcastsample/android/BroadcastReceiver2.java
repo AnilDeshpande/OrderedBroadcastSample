@@ -21,6 +21,6 @@ public class BroadcastReceiver2 extends BroadcastReceiver {
         String trail=bundle.getString(BREAD_CRUMB);
         trail=(trail==null?"Start->"+TAG:trail+"->"+TAG);
         bundle.putString(BREAD_CRUMB, trail);
-        Log.i(TAG, "BroadCastReceiver2 triggered");
+        Log.i(TAG, "BroadCastReceiver2 triggered: "+trail);
     }
 }
